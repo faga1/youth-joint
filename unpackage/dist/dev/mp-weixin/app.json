@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/active/active",
+    "pages/active/activeDetail",
+    "pages/contacts/contacts",
+    "pages/user/user"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "pages/home/vipStyle/vipStyle",
+        "pages/home/active/active",
+        "pages/home/notice/notice",
+        "pages/home/notice/noticeDetail",
+        "pages/user/userCenter/userCenter",
+        "pages/user/userCenter/editUserInfo",
+        "pages/user/systemSet/systemSet",
+        "pages/user/myActive/myActive",
+        "pages/user/myActive/myActiveDetail",
+        "pages/home/vipStyle/styleDetail"
+      ],
+      "name": "pagesA"
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uView",
+    "navigationBarBackgroundColor": "#d81e06",
+    "backgroundColor": "#d81e06"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/img/tabBar/home0.png",
+        "selectedIconPath": "static/img/tabBar/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/active/active",
+        "iconPath": "static/img/tabBar/gift0.png",
+        "selectedIconPath": "static/img/tabBar/gift1.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/contacts/contacts",
+        "iconPath": "static/img/tabBar/contacts0.png",
+        "selectedIconPath": "static/img/tabBar/contacts1.png",
+        "text": "通讯录"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/img/tabBar/user0.png",
+        "selectedIconPath": "static/img/tabBar/user1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/home/home": {
+      "network": "all",
+      "packages": [
+        "pagesA"
+      ]
+    }
+  },
+  "usingComponents": {}
+}

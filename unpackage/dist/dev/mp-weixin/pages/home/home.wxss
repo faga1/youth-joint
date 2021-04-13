@@ -1,0 +1,260 @@
+
+.u-cell {
+	padding: 16rpx 32rpx
+}
+
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.grid {
+  padding: 0 30rpx;
+  background: #fff;
+}
+.grid-text {
+  font-size: 34rpx;
+  color: #666666;
+  margin-top: 4rpx;
+}
+.noticeRow {
+  background-color: #fff;
+  padding: 10rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.noticeRow .notL {
+  width: 49px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.noticeRow .notL .notTab {
+  width: 54px;
+  padding: 5rpx 14rpx;
+  color: #ffffff;
+  border: 1px solid #d81e06;
+  background: #d81e06;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  font-size: 36rpx;
+  text-align: center;
+}
+.noticeRow .notC {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  color: #666666;
+}
+.noticeRow .notR {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.swiper2 {
+  padding: 40rpx 0 55rpx 0;
+  background: #fff;
+}
+.activeBox {
+  background: #fff;
+}
+.activeBox .activeItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 20rpx 30rpx;
+  position: relative;
+}
+.activeBox .activeItem .watchNum {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  bottom: 10rpx;
+  right: 34rpx;
+  font-size: 24rpx;
+}
+.activeBox .activeItem .btn {
+  position: absolute;
+  right: 30rpx;
+  bottom: 48rpx;
+  font-size: 22rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+}
+.activeBox .activeItem .activeImg {
+  width: 230rpx;
+}
+.activeBox .activeItem .activeCont {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  padding: 15rpx;
+}
+.activeBox .activeItem .activeCont .actText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.activeBox .activeItem .activeCont .actTime {
+  height: 44rpx;
+  font-size: 22rpx;
+  color: #999;
+}
+.circleBox {
+  background: #fff;
+  padding: 15px;
+  position: relative;
+}
+.circleBox .msk {
+  position: absolute;
+  top: 0px;
+  z-index: 999;
+  left: 0px;
+}
+.circleBox .circleBoxCard {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 2px #efefef;
+          box-shadow: 0px 0px 2px #efefef;
+  border: 1px solid #efefef;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 45rpx 40rpx;
+  overflow: hidden;
+  line-height: 50rpx;
+  margin-bottom: 15px;
+}
+.circleBox .circleBoxCard .circleType {
+  width: 160rpx;
+  text-align: center;
+  padding: 0rpx 20rpx;
+  background: #ffe8e8;
+  color: #ff8a8d;
+  -webkit-border-bottom-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 24rpx;
+}
+.circleBox .circleBoxCard .circleTypes {
+  width: 220rpx;
+  text-align: center;
+  padding: 0rpx 20rpx;
+  background: #d7dff7;
+  color: #355fd6;
+  -webkit-border-bottom-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 28rpx;
+}
+.circleBox .circleBoxCard .name {
+  font-size: 36rpx;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.circleBox .circleBoxCard .contentBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.circleBox .circleBoxCard .contentBox .infoTitle {
+  min-width: 116rpx;
+  font-size: 26rpx;
+  color: #666666;
+}
+.circleBox .circleBoxCard .contentBox .info {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  font-size: 26rpx;
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.circleBox .circleBoxCard .moneyBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.circleBox .circleBoxCard .moneyBox .moneyTitle {
+  width: 120rpx;
+  font-size: 26rpx;
+  color: #666666;
+}
+.circleBox .circleBoxCard .moneyBox .money {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  font-size: 26rpx;
+  color: #355fd6;
+}
+.circleBox .circleBoxCard .companyBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.circleBox .circleBoxCard .companyBox .iconImg {
+  width: 15px;
+  height: 15px;
+}
+.circleBox .circleBoxCard .companyBox .companyName {
+  padding: 0px 10rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  font-size: 26rpx;
+  color: #666666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.circleBox .circleBoxCard .btn {
+  position: absolute;
+  right: 30rpx;
+  bottom: 44rpx;
+  font-size: 28rpx;
+}
+

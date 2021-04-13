@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+page {
+  background-color: #f2f2f2;
+}
+.btn-hover {
+  background: #f2f2f2 !important;
+}
+.user .logOutBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  margin-top: 20rpx;
+}
+.user .order-status {
+  padding: 0 20rpx;
+  margin-top: -10vw;
+}
+.user .order-status .status-wrap {
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  overflow: hidden;
+}
+.user .order-status .status-wrap .status-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.user .order-status .status-wrap .status-list .status-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.user .order-status .status-wrap .status-list .status-item .item-icon {
+  line-height: 1;
+  font-size: 65rpx;
+  color: #bbb;
+}
+.user .order-status .status-wrap .status-list .status-item .item-text {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 5rpx;
+}
+.user .com-item {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+}
+.user .com-item .com-wrap {
+  -webkit-border-radius: 25rpx;
+          border-radius: 25rpx;
+  overflow: hidden;
+}
+.user .cell {
+  height: 80rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #f8f8f8;
+}
+.user .cell:active {
+  background: #f2f2f2;
+}
+.user .cell:last-child {
+  border-bottom: none !important;
+}
+.user .cell .cell-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.user .cell .cell-left .cell-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.user .cell .cell-left .cell-text {
+  color: #666;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.user .cell .version {
+  font-size: 28rpx;
+  color: #999;
+}
+.user .cell .iconfont {
+  color: #999;
+}
+

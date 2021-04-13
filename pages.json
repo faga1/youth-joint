@@ -1,0 +1,166 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "登录",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/home/home",
+		"style": {
+			"navigationBarTitleText": "首页",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/active/active",
+		"style": {
+			"navigationBarTitleText": "活动",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/active/activeDetail",
+		"style": {
+			"navigationBarTitleText": "活动详情",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/contacts/contacts",
+		"style": {
+			"navigationBarTitleText": "通讯录",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/user/user",
+		"style": {
+			"navigationBarTitleText": "我的",
+			"enablePullDownRefresh": false
+		}
+	}],
+	///////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////////
+	"subPackages": [{
+		"root": "pagesA",
+		"name": "pagesA",
+		"pages": [{
+				"path": "pages/home/vipStyle/vipStyle",
+				"style": {
+					"navigationBarTitleText": "会员风采",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/home/active/active",
+				"style": {
+					"navigationBarTitleText": "活动",
+					"enablePullDownRefresh": false
+				}
+
+			},
+
+			{
+				"path": "pages/home/notice/notice",
+				"style": {
+					"navigationBarTitleText": "通知公告",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "pages/home/notice/noticeDetail",
+				"style": {
+					"navigationBarTitleText": "通知详情",
+					"enablePullDownRefresh": false
+				}
+
+			},
+			{
+				"path": "pages/user/userCenter/userCenter",
+				"style": {
+					"navigationBarTitleText": "个人中心",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pages/user/userCenter/editUserInfo",
+				"style": {
+					"navigationBarTitleText": "编辑",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pages/user/systemSet/systemSet",
+				"style": {
+					"navigationBarTitleText": "系统设置",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "pages/user/myActive/myActive",
+				"style": {
+					"navigationBarTitleText": "我的活动",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "pages/user/myActive/myActiveDetail",
+				"style": {
+					"navigationBarTitleText": "活动详情",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "pages/home/vipStyle/styleDetail",
+				"style": {
+					"navigationBarTitleText": "会员风采",
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
+	}],
+	"preloadRule": {
+		"pages/home/home": {
+			"network": "all",
+			"packages": ["pagesA"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#d81e06",
+		"backgroundColor": "#d81e06"
+	},
+	"tabBar": {
+		"color": "#707070",
+		"selectedColor": "#d81e06",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/img/tabBar/home0.png",
+				"selectedIconPath": "static/img/tabBar/home1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/active/active",
+				"iconPath": "static/img/tabBar/gift0.png",
+				"selectedIconPath": "static/img/tabBar/gift1.png",
+				"text": "活动"
+			},
+			{
+				"pagePath": "pages/contacts/contacts",
+				"iconPath": "static/img/tabBar/contacts0.png",
+				"selectedIconPath": "static/img/tabBar/contacts1.png",
+				"text": "通讯录"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/img/tabBar/user0.png",
+				"selectedIconPath": "static/img/tabBar/user1.png",
+				"text": "我的"
+			}
+		]
+	}
+
+
+}

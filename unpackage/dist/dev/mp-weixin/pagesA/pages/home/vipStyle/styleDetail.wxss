@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.videoBox {
+  margin: 10rpx 0rpx;
+  border: 1px solid #efefef;
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 2px #efefef;
+          box-shadow: 0px 0px 2px #efefef;
+  position: relative;
+  background: #fff;
+}
+.videoBox .videos {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+.videoBox .videos .img {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  left: 45vw;
+  top: 45vh;
+}
+.videoBox .contentText {
+  background: #fff;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333333;
+  word-wrap: break-word;
+}
+.videoBox .controls {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 8rpx 30rpx 20rpx 30rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.videoBox .controls .date {
+  font-size: 22rpx;
+  color: #999999;
+}
+.videoBox .controls .controlsItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.videoBox .controls .controlsItem .items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0rpx 20rpx;
+  font-size: 18rpx;
+  color: #999999;
+}
+.videoBox .controls .controlsItem .items ._span {
+  line-height: 30rpx;
+}
+.videoBox .controls .controlsItem .items1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0rpx 20rpx;
+  font-size: 18rpx;
+  color: #999999;
+  border-right: 2px solid #999;
+}
+.videoBox .controls .controlsItem .items1 ._span {
+  line-height: 30rpx;
+}
+

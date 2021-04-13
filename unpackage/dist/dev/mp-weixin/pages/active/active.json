@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "活动",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-dropdown": "/uview-ui/components/u-dropdown/u-dropdown",
+    "u-dropdown-item": "/uview-ui/components/u-dropdown-item/u-dropdown-item",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-divider": "/uview-ui/components/u-divider/u-divider",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-empty": "/uview-ui/components/u-empty/u-empty",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}
