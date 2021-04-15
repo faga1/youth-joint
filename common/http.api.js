@@ -4,6 +4,11 @@ const install = (Vue, vm) => {
 	
 	//密码登录
 	let login = (params = {}) => vm.$u.post('app/member/login.htm', params);
+	//重置密码
+	let resetPassword = (params = {}) => vm.$u.post('app/member/forgetpassword.htm', params);
+	//获取验证码
+	let getCode = (params = {}) => vm.$u.post('app/getCode.htm', params);
+	
 	//获取用户信息
 	let getLeaderDetail = (params = {}) => vm.$u.post('app/member/info.htm', params);
 	//编辑用户信息
@@ -35,15 +40,49 @@ const install = (Vue, vm) => {
 	let getImgList = (params = {}) => vm.$u.post('app/activityTuji/list.htm', params);
 	//图集详情
 	let getImgDetail = (params = {}) => vm.$u.post('app/activityPic/detail.htm', params);
-	
-	
+	//我签到的协会活动
+	let getMySignedActiveXH = (params = {}) => vm.$u.post('app/activity/myxiehuilist.htm', params);
+	//我签到的公益活动
+	let getMySignedActiveGY = (params = {}) => vm.$u.post('app/activity/mygongyilist.htm', params);
 
 	//通讯录
 	let tongxunlu = (params = {}) => vm.$u.post('app/member/tongxunlu.htm', params);
 
 
-	// 将各个定义的接口名称，统一放进对象挂载到vm.$u.api(因为vm就是this，也即this.$u.api)下
+	//获取协会简介
+	let getSocietyIntro = (params = {}) => vm.$u.post('app/xiehui/xiehuijianjie.htm', params);
+	//获取协会章程
+	let getSocietyCharter = (params = {}) => vm.$u.post('app/xiehui/xiehuizhangcheng.htm', params);
+	//获取协会组织机构
+	let getSocietyOrgan = (params = {}) => vm.$u.post('app/xiehui/xiehuizuzhijigou.htm', params);
+	
+	
+	//委员团体
+	let getSocieties = (params = {}) => vm.$u.post('app/shetuan/list.htm', params);
+	//委员团体社团详情
+	let getSocietiesInfo = (params = {}) => vm.$u.post('app/shetuan/info.htm', params);
+	//社团活动列表
+	let getSocietAtc = (params = {}) => vm.$u.post('app/shetuanhuodong/list.htm', params);
+	//社团活动详情
+	let getSocietAtcInfo = (params = {}) => vm.$u.post('app/shetuanhuodong/info.htm', params);
+	
+	//界别列表
+	let jiebieList = (params = {}) => vm.$u.post('app/jiebie/list.htm', params);
+	//界别详情
+	let jiebieInfo = (params = {}) => vm.$u.post('app/jiebie/info.htm', params);
+	
 	vm.$u.api = {
+		getCode,
+		resetPassword,
+		jiebieInfo,
+		jiebieList,
+		getSocietAtcInfo,
+		getSocietAtc,
+		getSocietiesInfo,
+		getSocieties,
+		getSocietyOrgan,
+		getSocietyCharter,
+		getSocietyIntro,
 		getDictionaryByKey,
 		login,
 		getLeaderDetail,
@@ -59,6 +98,8 @@ const install = (Vue, vm) => {
 		getImgList,
 		getImgDetail,
 		tongxunlu,
+		getMySignedActiveXH,
+		getMySignedActiveGY,
 	};
 }
 

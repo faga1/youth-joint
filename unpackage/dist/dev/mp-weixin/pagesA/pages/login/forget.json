@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "重置密码",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-verification-code": "/uview-ui/components/u-verification-code/u-verification-code",
+    "u-line": "/uview-ui/components/u-line/u-line",
+    "u-button": "/uview-ui/components/u-button/u-button"
+  }
+}

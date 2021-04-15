@@ -48,7 +48,7 @@
 			 */
 			toForget() {
 				uni.navigateTo({
-					url: ""
+					url: "../../pagesA/pages/login/forget"
 				})
 			},
 

@@ -33,22 +33,22 @@
 					<u-form-item label="身份证号" prop="idcard" v-if="!noEdit">
 						<p class="FormText">{{userInfo.idcard}}</p>
 					</u-form-item>
-					<u-form-item label="联系电话(手机)" prop="shouji" v-if="!noEdit">
-						<p class="FormText">{{userInfo.shouji}}</p>
+					<u-form-item label="联系电话(手机)" prop="shouji">
+						<p class="FormText" @click="callTel(userInfo.shouji)">{{userInfo.shouji}}</p>
 					</u-form-item>
-					<u-form-item label="联系电话(固话)" prop="guhua" v-if="!noEdit">
-						<p class="FormText">{{userInfo.guhua}}</p>
+					<u-form-item label="联系电话(固话)" prop="guhua">
+						<p class="FormText" @click="callTel(userInfo.guhua)">{{userInfo.guhua}}</p>
 					</u-form-item>
-					<u-form-item label="个人电子邮箱" prop="youxiang" v-if="!noEdit">
+					<u-form-item label="个人电子邮箱" prop="youxiang">
 						<p class="FormText">{{userInfo.youxiang}}</p>
 					</u-form-item>
-					<u-form-item label="微信" prop="weixin" v-if="!noEdit">
+					<u-form-item label="微信" prop="weixin">
 						<p class="FormText">{{userInfo.weixin}}</p>
 					</u-form-item>
-					<u-form-item label="QQ" prop="qq" v-if="!noEdit">
+					<u-form-item label="QQ" prop="qq">
 						<p class="FormText">{{userInfo.qq}}</p>
 					</u-form-item>
-					<u-form-item label="协会职务" prop="xhzw">
+					<u-form-item label="青联职务" prop="xhzw">
 						<p class="FormText">{{userInfo.xhzw}}</p>
 					</u-form-item>
 					<u-form-item label="社会职务" prop="jianli">
@@ -106,6 +106,23 @@
 			this.getUserDetail()
 		},
 		methods: {
+			/**
+			 * @param {Object} tel
+			 * 拨打电话
+			 */
+			callTel(tel) {
+				console.log(tel);
+				uni.makePhoneCall({
+					phoneNumber: tel,
+					success: (res) => {
+						console.log('调用成功!')
+					},
+					fail: (res) => {
+						console.log('调用失败!')
+					}
+				});
+			},
+
 
 			/**
 			 * 前往编辑

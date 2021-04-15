@@ -26,7 +26,7 @@
 					</view>
 					<view class="activeCont">
 						<view class="actText">{{item.name}}</view>
-						<view class="actType">{{item.leibie==="1"?"青联活动":"界别活动"}}</view>
+						<view class="actType">{{item.leibie==="1"?"青联活动":"界别活动"+"--"+item.jiebie}}</view>
 						<view class="actTime">{{item.createtime}}</view>
 					</view>
 					<u-button v-if="item.baomingstate==='2'" class="btn" type="primary" size="mini"

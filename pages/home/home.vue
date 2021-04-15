@@ -79,6 +79,7 @@
 					</view>
 					<view class="activeCont">
 						<view class="actText">{{item.name}}</view>
+						<view class="actType">{{item.leibie==="1"?"青联活动":"界别活动"+"--"+item.jiebie}}</view>
 						<view class="actTime">{{item.createtime}}</view>
 					</view>
 					<u-button v-if="item.baomingstate==='2'" class="btn" type="primary" size="mini"
@@ -106,7 +107,6 @@
 				vipStyleList: [], //会员风采
 				vipStyleImg: [], //会员风采
 				activeList: [], //活动
-				businessCircle: [], //圈子（待接单业务）
 				loading: true,
 			};
 		},
@@ -121,7 +121,6 @@
 			 * 前往详情
 			 */
 			toDetail(e) {
-				console.log(e);
 				uni.navigateTo({
 					url: '../active/activeDetail?aid=' + e
 				});
@@ -134,22 +133,6 @@
 				uni.navigateTo({
 					url: '../../pagesA/pages/home/active/active?leibieType=0'
 				});
-			},
-			/**
-			 * 前往圈子
-			 */
-			toGroup() {
-				if (this.isMember) {
-					uni.navigateTo({
-						url: '../../pagesA/pages/home/group/group'
-					});
-				} else {
-					this.$refs.uToast.show({
-						title: "您还不是会员",
-						type: 'error',
-					})
-				}
-
 			},
 			/**
 			 * 前往通知公告
@@ -182,13 +165,13 @@
 			gridClick(e) {
 				if (e === 1) {
 					uni.navigateTo({
-						url: '../../pagesA/pages/home/society/society'
+						url: '../../pagesA/pages/home/societyIntro/societyIntro'
 					})
 				}
 				if (e === 2) {
 					if (this.isMember) {
 						uni.navigateTo({
-							url: '../../pagesA/pages/home/shop/shop'
+							url: '../../pagesA/pages/home/jiebieActive/jiebieActive'
 						});
 					} else {
 						this.$refs.uToast.show({
@@ -200,7 +183,7 @@
 				if (e === 3) {
 					if (this.isMember) {
 						uni.navigateTo({
-							url: '../../pagesA/pages/home/group/group'
+							url: '../../pagesA/pages/home/league/league'
 						});
 					} else {
 						this.$refs.uToast.show({
@@ -212,18 +195,9 @@
 
 				if (e === 4) {
 					uni.navigateTo({
-						url: '../../pagesA/pages/home/active/active?leibieType=2'
+						url: '../../pagesA/pages/home/regulation/regulation'
 					});
 				}
-			},
-			/**
-			 * @param {Object} e
-			 * 前往项目详情
-			 */
-			toGroupDetail(e) {
-				uni.navigateTo({
-					url: '../../pagesA/pages/home/group/groupDetail?gid=' + e
-				})
 			},
 			/**
 			 * 获取轮播图
@@ -487,6 +461,12 @@
 					-webkit-line-clamp: 2;
 					font-size: 30rpx;
 					font-weight: 600;
+				}
+
+				.actType {
+					height: 44rpx;
+					font-size: 24rpx;
+					color: #ffaa00;
 				}
 
 				.actTime {

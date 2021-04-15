@@ -20,7 +20,16 @@
         "pages/user/systemSet/systemSet",
         "pages/user/myActive/myActive",
         "pages/user/myActive/myActiveDetail",
-        "pages/home/vipStyle/styleDetail"
+        "pages/home/vipStyle/styleDetail",
+        "pages/home/societyIntro/societyIntro",
+        "pages/home/societyIntro/jiebieInfo",
+        "pages/home/league/league",
+        "pages/home/league/leagueDetail/leagueDetail",
+        "pages/home/league/leagueDetail/leagueDetailInfo",
+        "pages/home/regulation/regulation",
+        "pages/home/jiebieActive/jiebieActive",
+        "pages/home/jiebieActive/jiebieActiveDetail",
+        "pages/login/forget"
       ],
       "name": "pagesA"
     }

@@ -10,7 +10,7 @@
 					</view>
 					<view class="activeCont">
 						<view class="actText">{{item.name}}</view>
-						<view class="actType">{{item.leibie==="1"?"协会活动":"公益活动"}}</view>
+						<view class="actType">{{item.leibie==="1"?"青联活动":"界别活动"+"--"+item.jiebie}}</view>
 						<view class="actTime">{{item.createtime}}</view>
 					</view>
 					<!-- <u-button size="mini" v-if="item.qiandaostate==='0'" class="btn" type="warning">已报名</u-button>
@@ -30,9 +30,9 @@
 		data() {
 			return {
 				list: [{
-					name: '协会活动'
+					name: '青联活动'
 				}, {
-					name: '公益活动'
+					name: '界别活动'
 				}],
 				current: 0,
 				activeList: [],

@@ -123,6 +123,11 @@
   font-size: 30rpx;
   font-weight: 600;
 }
+.activeBox .activeItem .activeCont .actType {
+  height: 44rpx;
+  font-size: 24rpx;
+  color: #ffaa00;
+}
 .activeBox .activeItem .activeCont .actTime {
   height: 44rpx;
   font-size: 22rpx;

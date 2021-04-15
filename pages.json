@@ -50,32 +50,25 @@
 					"navigationBarTitleText": "会员风采",
 					"enablePullDownRefresh": false
 				}
-			},
-			{
+			}, {
 				"path": "pages/home/active/active",
 				"style": {
 					"navigationBarTitleText": "活动",
 					"enablePullDownRefresh": false
 				}
-
-			},
-
-			{
+			}, {
 				"path": "pages/home/notice/notice",
 				"style": {
 					"navigationBarTitleText": "通知公告",
 					"enablePullDownRefresh": false
 				}
-
 			}, {
 				"path": "pages/home/notice/noticeDetail",
 				"style": {
 					"navigationBarTitleText": "通知详情",
 					"enablePullDownRefresh": false
 				}
-
-			},
-			{
+			}, {
 				"path": "pages/user/userCenter/userCenter",
 				"style": {
 					"navigationBarTitleText": "个人中心",
@@ -93,29 +86,80 @@
 					"navigationBarTitleText": "系统设置",
 					"enablePullDownRefresh": false
 				}
-
 			}, {
 				"path": "pages/user/myActive/myActive",
 				"style": {
 					"navigationBarTitleText": "我的活动",
 					"enablePullDownRefresh": false
 				}
-
 			}, {
 				"path": "pages/user/myActive/myActiveDetail",
 				"style": {
 					"navigationBarTitleText": "活动详情",
 					"enablePullDownRefresh": false
 				}
-
 			}, {
 				"path": "pages/home/vipStyle/styleDetail",
 				"style": {
 					"navigationBarTitleText": "会员风采",
 					"enablePullDownRefresh": false
 				}
-
+			}, {
+				"path": "pages/home/societyIntro/societyIntro",
+				"style": {
+					"navigationBarTitleText": "青联简介",
+					"enablePullDownRefresh": false
+				}
+			},{
+				"path": "pages/home/societyIntro/jiebieInfo",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pages/home/league/league",
+				"style": {
+					"navigationBarTitleText": "协会团体",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pages/home/league/leagueDetail/leagueDetail",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pages/home/league/leagueDetail/leagueDetailInfo",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pages/home/regulation/regulation",
+				"style": {
+					"navigationBarTitleText": "青联规章",
+					"enablePullDownRefresh": false
+				}
+			},{
+				"path": "pages/home/jiebieActive/jiebieActive",
+				"style": {
+					"navigationBarTitleText": "界别活动",
+					"enablePullDownRefresh": false
+				}
+			},{
+				"path": "pages/home/jiebieActive/jiebieActiveDetail",
+				"style": {
+					"navigationBarTitleText": "活动详情",
+					"enablePullDownRefresh": false
+				}
+			},{
+				"path": "pages/login/forget",
+				"style": {
+					"navigationBarTitleText": "重置密码",
+					"enablePullDownRefresh": false
+				}
 			}
+
 		]
 	}],
 	"preloadRule": {

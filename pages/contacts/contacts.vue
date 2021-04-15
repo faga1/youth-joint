@@ -60,7 +60,10 @@
 			 * 前往用户详情
 			 */
 			toUserDetail(e) {
-				console.log("用户id", e.target.id);
+				let mid = e.target.id
+				uni.navigateTo({
+					url: "../../pagesA/pages/user/userCenter/userCenter?uid=" + mid + "&noEdit=1"
+				})
 			}
 		}
 	}
