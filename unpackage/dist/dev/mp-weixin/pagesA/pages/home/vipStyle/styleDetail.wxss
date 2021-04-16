@@ -5,7 +5,11 @@
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
 .videoBox {
-  margin: 10rpx 0rpx;
+  width: 100%;
+}
+.videoBox .video_info {
+  width: 100%;
+  height: 100vh;
   border: 1px solid #efefef;
   -webkit-border-radius: 12rpx;
           border-radius: 12rpx;
@@ -14,20 +18,33 @@
           box-shadow: 0px 0px 2px #efefef;
   position: relative;
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  /* 视频 */
 }
-.videoBox .videos {
+.videoBox .video_info .video_video {
   width: 100%;
-  height: 85vh;
-  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
 }
-.videoBox .videos .img {
-  position: absolute;
-  width: 100rpx;
-  height: 100rpx;
-  left: 45vw;
-  top: 45vh;
+.videoBox .video_info .video_video video {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
 }
-.videoBox .contentText {
+.videoBox .video_info .allText {
+  height: 73px;
+}
+.videoBox .video_info .allText .contentText {
   background: #fff;
   padding: 20rpx 30rpx;
   font-size: 28rpx;
@@ -35,7 +52,7 @@
   color: #333333;
   word-wrap: break-word;
 }
-.videoBox .controls {
+.videoBox .video_info .allText .controls {
   background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,16 +62,16 @@
   -webkit-justify-content: space-between;
           justify-content: space-between;
 }
-.videoBox .controls .date {
+.videoBox .video_info .allText .controls .date {
   font-size: 22rpx;
   color: #999999;
 }
-.videoBox .controls .controlsItem {
+.videoBox .video_info .allText .controls .controlsItem {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.videoBox .controls .controlsItem .items {
+.videoBox .video_info .allText .controls .controlsItem .items {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -62,10 +79,10 @@
   font-size: 18rpx;
   color: #999999;
 }
-.videoBox .controls .controlsItem .items ._span {
+.videoBox .video_info .allText .controls .controlsItem .items ._span {
   line-height: 30rpx;
 }
-.videoBox .controls .controlsItem .items1 {
+.videoBox .video_info .allText .controls .controlsItem .items1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -74,7 +91,7 @@
   color: #999999;
   border-right: 2px solid #999;
 }
-.videoBox .controls .controlsItem .items1 ._span {
+.videoBox .video_info .allText .controls .controlsItem .items1 ._span {
   line-height: 30rpx;
 }
 

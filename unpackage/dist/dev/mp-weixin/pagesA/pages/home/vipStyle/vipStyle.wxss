@@ -4,19 +4,12 @@
  * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
-page {
-  background-color: #f2f2f2;
-}
-cover-view,
-cover-image {
-  display: inline-block;
-}
 .searchBox {
   position: fixed;
   top: 0px;
   width: -webkit-fill-available;
   right: 0px;
-  z-index: 99;
+  z-index: 999;
   background-color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -40,10 +33,51 @@ cover-image {
   -webkit-justify-content: space-around;
           justify-content: space-around;
 }
-.all {
-  padding: 0 30rpx;
+.yinYing2 {
+  width: 100%;
+  position: absolute;
+  height: 80rpx;
+  background-size: 100% 100%;
+  z-index: 444;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  /* 头像昵称 */
 }
-.all .videoBox {
+.yinYing2 .touXiang {
+  height: 45rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  z-index: 666;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 320rpx;
+}
+.yinYing2 .touXiang image {
+  width: 41rpx;
+  height: 41rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-right: 10rpx;
+}
+.hot_video {
+  width: 95vw;
+  margin: 0 auto;
+}
+.hot_video .videoBox {
+  width: 100%;
+}
+.hot_video .videoBox .video_info {
+  width: 100%;
   margin: 10rpx 0rpx;
   border: 1px solid #efefef;
   -webkit-border-radius: 12rpx;
@@ -53,20 +87,100 @@ cover-image {
           box-shadow: 0px 0px 2px #efefef;
   position: relative;
   background: #fff;
+  /* 视频 */
+  /* 视频图片 */
 }
-.all .videoBox .videos {
+.hot_video .videoBox .video_info .video_video {
   width: 100%;
-  height: 380rpx;
+  height: 400rpx;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+}
+.hot_video .videoBox .video_info .video_video video {
+  width: 100%;
+  height: 400rpx;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+}
+.hot_video .videoBox .video_info .video_img {
+  width: 100%;
+  height: 400rpx;
   position: relative;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10rpx #ccc;
+          box-shadow: 0 0 10rpx #ccc;
+  position: relative;
+  overflow: hidden;
 }
-.all .videoBox .videos .img {
+.hot_video .videoBox .video_info .video_img .fm {
+  width: 100%;
   position: absolute;
-  width: 100rpx;
-  height: 100rpx;
-  left: 39vw;
-  top: 7vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-.all .videoBox .contentText {
+.hot_video .videoBox .video_info .video_img .anNiuBox {
+  position: absolute;
+  z-index: 666;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90rpx;
+  height: 90rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.hot_video .videoBox .video_info .video_img .anNiuBox .anNiu {
+  width: 80rpx;
+  height: 80rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.hot_video .videoBox .video_info .video_img .yanBox {
+  position: absolute;
+  z-index: 666;
+  top: 25rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 26rpx;
+}
+.hot_video .videoBox .video_info .video_img .yanBox .yan {
+  width: 24rpx;
+  height: 20rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+}
+.hot_video .videoBox .video_info .video_img .user_avatar {
+  width: 41rpx;
+  height: 41rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  left: 15rpx;
+  bottom: 15rpx;
+  z-index: 666;
+}
+.hot_video .videoBox .video_info .contentText {
   background: #fff;
   padding: 20rpx 30rpx;
   font-size: 28rpx;
@@ -74,7 +188,7 @@ cover-image {
   color: #333333;
   word-wrap: break-word;
 }
-.all .videoBox .controls {
+.hot_video .videoBox .video_info .controls {
   background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -84,16 +198,16 @@ cover-image {
   -webkit-justify-content: space-between;
           justify-content: space-between;
 }
-.all .videoBox .controls .date {
+.hot_video .videoBox .video_info .controls .date {
   font-size: 22rpx;
   color: #999999;
 }
-.all .videoBox .controls .controlsItem {
+.hot_video .videoBox .video_info .controls .controlsItem {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.all .videoBox .controls .controlsItem .items {
+.hot_video .videoBox .video_info .controls .controlsItem .items {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -101,10 +215,10 @@ cover-image {
   font-size: 18rpx;
   color: #999999;
 }
-.all .videoBox .controls .controlsItem .items ._span {
+.hot_video .videoBox .video_info .controls .controlsItem .items ._span {
   line-height: 30rpx;
 }
-.all .videoBox .controls .controlsItem .items1 {
+.hot_video .videoBox .video_info .controls .controlsItem .items1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -113,7 +227,7 @@ cover-image {
   color: #999999;
   border-right: 2px solid #999;
 }
-.all .videoBox .controls .controlsItem .items1 ._span {
+.hot_video .videoBox .video_info .controls .controlsItem .items1 ._span {
   line-height: 30rpx;
 }
 
