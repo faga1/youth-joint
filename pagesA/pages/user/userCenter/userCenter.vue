@@ -42,6 +42,9 @@
 					<u-form-item label="个人电子邮箱" prop="youxiang">
 						<p class="FormText">{{userInfo.youxiang}}</p>
 					</u-form-item>
+					<u-form-item label="界别" prop="jiebie">
+						<p class="FormText">{{userInfo.jiebie}}</p>
+					</u-form-item>
 					<u-form-item label="微信" prop="weixin">
 						<p class="FormText">{{userInfo.weixin}}</p>
 					</u-form-item>

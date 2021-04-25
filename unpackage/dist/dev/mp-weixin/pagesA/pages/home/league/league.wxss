@@ -14,10 +14,8 @@
   padding: 7rpx;
 }
 .infoBox1 {
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 7px #eff1f8;
-          box-shadow: 0px 0px 7px #eff1f8;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px #eff1f8;
   overflow: hidden;
   padding: 20rpx;
   display: -webkit-box;

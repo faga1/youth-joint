@@ -1,7 +1,7 @@
 <template>
 	<u-index-list :scrollTop="scrollTop" :index-list="indexList">
 		<view v-for="(item, index) in list" :key="index">
-			<u-index-anchor class="index-anchor" :index="item.letter" v-show="item.data.length>0" />
+			<u-index-anchor class="index-anchor" :index="item.letter"/>
 			<view class="list-cell u-border-bottom" v-for="(item1, index) in item.data" :key="index">
 				<view style="width: 100%;" :id="item1.memberId" @click="toUserDetail">
 					{{item1.name}}
@@ -27,7 +27,10 @@
 		onPageScroll(e) {
 			this.scrollTop = e.scrollTop;
 		},
-		onLoad() {
+		// onLoad() {
+		// 	this.getContacts()
+		// },
+		onShow() {
 			this.getContacts()
 		},
 		methods: {

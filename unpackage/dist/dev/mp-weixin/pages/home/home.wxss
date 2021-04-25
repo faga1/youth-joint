@@ -43,8 +43,7 @@
   color: #ffffff;
   border: 1px solid #d81e06;
   background: #d81e06;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
+  border-radius: 6px;
   font-size: 36rpx;
   text-align: center;
 }
@@ -146,11 +145,9 @@
 }
 .circleBox .circleBoxCard {
   background: #fff;
-  -webkit-box-shadow: 0px 0px 2px #efefef;
-          box-shadow: 0px 0px 2px #efefef;
+  box-shadow: 0px 0px 2px #efefef;
   border: 1px solid #efefef;
-  -webkit-border-radius: 12px;
-          border-radius: 12px;
+  border-radius: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -170,8 +167,7 @@
   padding: 0rpx 20rpx;
   background: #ffe8e8;
   color: #ff8a8d;
-  -webkit-border-bottom-left-radius: 16px;
-          border-bottom-left-radius: 16px;
+  border-bottom-left-radius: 16px;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -183,8 +179,7 @@
   padding: 0rpx 20rpx;
   background: #d7dff7;
   color: #355fd6;
-  -webkit-border-bottom-left-radius: 16px;
-          border-bottom-left-radius: 16px;
+  border-bottom-left-radius: 16px;
   position: absolute;
   top: 0px;
   right: 0px;

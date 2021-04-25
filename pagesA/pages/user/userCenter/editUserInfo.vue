@@ -1,18 +1,24 @@
 <template>
 	<view class="all">
 		<u-form :model="form" ref="uForm" label-width="140" label-position="left">
-			<u-form-item label="姓名" prop="name">
+			<u-form-item required label="姓名" prop="name">
 				<u-input v-model="form.name" />
 			</u-form-item>
-			<u-form-item label="性别" prop="sex">
+			<u-form-item required label="性别" prop="sex">
 				<u-radio-group v-model="form.sex">
 					<u-radio name="男">男</u-radio>
 					<u-radio name="女">女</u-radio>
 				</u-radio-group>
 			</u-form-item>
-			<u-form-item label="相片" prop="touxiang">
+			<u-form-item required label="相片" prop="touxiang">
 				<u-upload :action="action" :file-list="fileList" max-count="1" @on-change="chooseImg"
 					@on-remove="removeImg"></u-upload>
+			</u-form-item>
+			<u-form-item required label="身份证号" prop="idcard">
+				<u-input v-model="form.idcard" />
+			</u-form-item>
+			<u-form-item required label="联系电话(手机)" prop="shouji">
+				<u-input v-model="form.shouji" />
 			</u-form-item>
 			<u-form-item label="民族" prop="minzu">
 				<u-input v-model="form.minzu" />
@@ -32,12 +38,6 @@
 			<u-form-item label="政治面貌" prop="zzmm">
 				<u-input v-model="form.zzmm" type="select" placeholder="请选择" @click="zzmmShow = true" />
 				<u-action-sheet :list="zzmmList" v-model="zzmmShow" @click="chooseZzmm"></u-action-sheet>
-			</u-form-item>
-			<u-form-item label="身份证号" prop="idcard">
-				<u-input v-model="form.idcard" />
-			</u-form-item>
-			<u-form-item label="联系电话(手机)" prop="shouji">
-				<u-input v-model="form.shouji" />
 			</u-form-item>
 			<u-form-item label="联系电话(固话)" prop="guhua">
 				<u-input v-model="form.guhua" />
@@ -143,31 +143,6 @@
 						message: '请上传头像',
 						trigger: 'blur,change'
 					}],
-					minzu: [{
-						required: true,
-						message: '请输入民族',
-						trigger: 'blur',
-					}],
-					birthday: [{
-						required: true,
-						message: '请选择生日',
-						trigger: 'blur,change'
-					}],
-					xueli: [{
-						required: true,
-						message: '请选择学历',
-						trigger: 'blur,change'
-					}],
-					jiguan: [{
-						required: true,
-						message: '请选择籍贯',
-						trigger: 'blur,change'
-					}],
-					zzmm: [{
-						required: true,
-						message: '请选择政治面貌',
-						trigger: 'blur,change'
-					}],
 					idcard: [{
 							required: true,
 							message: '请输入身份证号',
@@ -195,55 +170,6 @@
 							trigger: 'blur',
 						}
 					],
-					guhua: [{
-						required: true,
-						message: '请输入固话号码',
-						trigger: 'blur',
-					}],
-					youxiang: [{
-							required: true,
-							message: '请输入邮箱',
-							trigger: 'blur',
-						},
-						{
-							pattern: /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/g,
-							// 正则检验前先将值转为字符串
-							transform(value) {
-								return String(value);
-							},
-							message: '邮箱格式不正确'
-						},
-					],
-					weixin: [{
-						required: true,
-						message: '请输入微信',
-						trigger: 'blur',
-					}],
-					qq: [{
-						required: true,
-						message: '请输入qq',
-						trigger: 'blur',
-					}],
-					jianli: [{
-						required: true,
-						message: '请填写简历',
-						trigger: 'blur',
-					}],
-					tongxindizhi: [{
-						required: true,
-						message: '请填写通讯地址',
-						trigger: 'blur',
-					}],
-					youbian: [{
-						required: true,
-						message: '请填写邮编',
-						trigger: 'blur',
-					}],
-					chuanzhen: [{
-						required: true,
-						message: '请填写传真',
-						trigger: 'blur',
-					}],
 				},
 			};
 		},

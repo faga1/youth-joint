@@ -24,8 +24,7 @@ page {
   margin-top: -10vw;
 }
 .user .order-status .status-wrap {
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   overflow: hidden;
 }
 .user .order-status .status-wrap .status-list {
@@ -76,8 +75,7 @@ page {
   margin-top: 20rpx;
 }
 .user .com-item .com-wrap {
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   overflow: hidden;
 }
 .user .cell {

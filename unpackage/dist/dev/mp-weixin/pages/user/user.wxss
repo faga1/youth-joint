@@ -23,8 +23,7 @@ page {
   height: 57vw;
   padding: 30rpx;
   z-index: 9;
-  -webkit-border-radius: 0 0 12% 12%;
-          border-radius: 0 0 12% 12%;
+  border-radius: 0 0 12% 12%;
   background: url("https://youngbucket.oss-cn-hangzhou.aliyuncs.com/0b0fa999-6657-4da9-94a4-c1e8d05ba252.jpg") no-repeat;
   background-size: cover;
 }
@@ -50,8 +49,7 @@ page {
   margin-top: -10vw;
 }
 .user .order-status .status-wrap {
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   overflow: hidden;
 }
 .user .order-status .status-wrap .status-list {
@@ -102,8 +100,7 @@ page {
   margin-top: 20rpx;
 }
 .user .com-item .com-wrap {
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   overflow: hidden;
 }
 .user .cell {
