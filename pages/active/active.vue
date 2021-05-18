@@ -151,7 +151,7 @@
 					if (res.error_code === 0) {
 						that.$refs.uToast.show({
 							title: res.data,
-							type: 'success ',
+							type: 'success',
 						})
 						that.search()
 					} else {
