@@ -2,6 +2,7 @@
   "navigationBarTitleText": "青联规章",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-parse": "/uview-ui/components/u-parse/u-parse"
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item"
   }
 }

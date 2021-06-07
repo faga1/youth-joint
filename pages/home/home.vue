@@ -21,7 +21,7 @@
 			<u-grid-item :index="3">
 				<u-image width="108rpx" height="108rpx" shape="circle" :lazy-load="true"
 					src="/static/img/home/home_icon3.png"></u-image>
-				<view class="grid-text">委员团体</view>
+				<view class="grid-text">会员团体</view>
 			</u-grid-item>
 			<u-grid-item :index="4">
 				<u-image width="108rpx" height="108rpx" shape="circle" :lazy-load="true"

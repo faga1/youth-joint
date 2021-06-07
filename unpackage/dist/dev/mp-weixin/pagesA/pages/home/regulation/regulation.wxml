@@ -1,1 +1,1 @@
-<view><u-parse class="innerh5" vue-id="543fbfe8-1" html="{{content}}" show-with-animation="{{true}}" lazy-load="{{true}}" bind:__l="__l"></u-parse></view>
+<view><u-cell-group vue-id="543fbfe8-1" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index"><u-cell-item vue-id="{{('543fbfe8-2-'+index)+','+('543fbfe8-1')}}" title="{{item.title}}" data-event-opts="{{[['^click',[['toDetail',['$0'],[[['dataList','',index,'id']]]]]]]}}" bind:click="__e" bind:__l="__l"></u-cell-item></block></u-cell-group></view>

@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "协会团体",
+  "navigationBarTitleText": "会员团体",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "u-row": "/uview-ui/components/u-row/u-row",

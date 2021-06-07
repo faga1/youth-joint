@@ -1,0 +1,1 @@
+<view><u-parse class="innerh5" vue-id="2b109697-1" html="{{content}}" show-with-animation="{{true}}" lazy-load="{{true}}" bind:__l="__l"></u-parse></view>

@@ -110,7 +110,7 @@
 					"navigationBarTitleText": "青联简介",
 					"enablePullDownRefresh": false
 				}
-			},{
+			}, {
 				"path": "pages/home/societyIntro/jiebieInfo",
 				"style": {
 					"navigationBarTitleText": "",
@@ -119,7 +119,7 @@
 			}, {
 				"path": "pages/home/league/league",
 				"style": {
-					"navigationBarTitleText": "协会团体",
+					"navigationBarTitleText": "会员团体",
 					"enablePullDownRefresh": false
 				}
 			}, {
@@ -140,26 +140,32 @@
 					"navigationBarTitleText": "青联规章",
 					"enablePullDownRefresh": false
 				}
-			},{
+			}, {
 				"path": "pages/home/jiebieActive/jiebieActive",
 				"style": {
 					"navigationBarTitleText": "界别活动",
 					"enablePullDownRefresh": false
 				}
-			},{
+			}, {
 				"path": "pages/home/jiebieActive/jiebieActiveDetail",
 				"style": {
 					"navigationBarTitleText": "活动详情",
 					"enablePullDownRefresh": false
 				}
-			},{
+			}, {
 				"path": "pages/login/forget",
 				"style": {
 					"navigationBarTitleText": "重置密码",
 					"enablePullDownRefresh": false
 				}
-			}
+			}, {
+				"path": "pages/home/regulation/regulationDetail",
+				"style": {
+					"navigationBarTitleText": "规章详情",
+					"enablePullDownRefresh": false
+				}
 
+			}
 		]
 	}],
 	"preloadRule": {

@@ -71,7 +71,14 @@ const install = (Vue, vm) => {
 	//界别详情
 	let jiebieInfo = (params = {}) => vm.$u.post('app/jiebie/info.htm', params);
 	
+	
+	//规章列表
+	let guizhangList = (params = {}) => vm.$u.post('app/guizhang/list.htm', params);
+	//规章详情
+	let guizhangInfo = (params = {}) => vm.$u.post('app/guizhang/info.htm', params);
 	vm.$u.api = {
+		guizhangInfo,
+		guizhangList,
 		getCode,
 		resetPassword,
 		jiebieInfo,

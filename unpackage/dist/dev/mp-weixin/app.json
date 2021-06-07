@@ -29,7 +29,8 @@
         "pages/home/regulation/regulation",
         "pages/home/jiebieActive/jiebieActive",
         "pages/home/jiebieActive/jiebieActiveDetail",
-        "pages/login/forget"
+        "pages/login/forget",
+        "pages/home/regulation/regulationDetail"
       ],
       "name": "pagesA"
     }

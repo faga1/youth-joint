@@ -1,6 +1,8 @@
 <template>
 	<view>
-		<u-parse class="innerh5" :html="content" :show-with-animation="true" :lazy-load="true"></u-parse>
+		<u-cell-group>
+			<u-cell-item v-for="(item,index) in dataList" :title="item.title" @click="toDetail(item.id)"></u-cell-item>
+		</u-cell-group>
 	</view>
 </template>
 
@@ -8,26 +10,33 @@
 	export default {
 		data() {
 			return {
-				content: "",
+				dataList: [],
 			};
 		},
 		onShow() {
-			this.getSocietyCharter()
+			this.getGuizhangList()
 		},
 		methods: {
 			/**
-			 * 获取协会章程
+			 * 获取规章列表
 			 */
-			getSocietyCharter() {
-				console.log(">>>>>>>>>>");
-				let obj = {
-					"xiehuiId": "1"
-				}
+			getGuizhangList() {
 				let that = this
-				that.$u.api.getSocietyCharter(obj).then(res => {
-					that.content = res.data.xiehuizhangcheng
+				let obj = {}
+				that.$u.api.guizhangList(obj).then(res => {
+					console.log(res);
+					that.dataList = res.list
 				})
-			}
+			},
+
+			/**
+			 * 前往详情
+			 */
+			toDetail(id) {
+				uni.navigateTo({
+					url: "./regulationDetail?id=" + id
+				})
+			},
 		}
 
 	}

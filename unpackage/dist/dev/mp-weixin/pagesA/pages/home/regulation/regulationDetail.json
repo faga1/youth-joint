@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "规章详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-parse": "/uview-ui/components/u-parse/u-parse"
+  }
+}
