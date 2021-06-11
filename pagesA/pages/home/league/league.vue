@@ -1,6 +1,6 @@
 <template>
 	<view class="all">
-		<u-row gutter="12">
+		<!-- 	<u-row gutter="12">
 			<u-col span="6" v-for="item in societiesList">
 				<view class="swiper-item1" @click="toDetail(item.shetuanId,item.name,item.logo)">
 					<view class="infoBox1" :style="{'background-image':'url('+item.logo+')'}">
@@ -8,7 +8,12 @@
 					</view>
 				</view>
 			</u-col>
-		</u-row>
+		</u-row> -->
+
+		<u-cell-group>
+			<u-cell-item v-for="item in societiesList" :title="item.name"
+				@click="toDetail(item.shetuanId,item.name,item.jianjie)"></u-cell-item>
+		</u-cell-group>
 	</view>
 </template>
 
@@ -37,9 +42,9 @@
 			/**
 			 * 前往详情
 			 */
-			toDetail(id, title, logo) {
+			toDetail(id, title, jianjie) {
 				uni.navigateTo({
-					url: './leagueDetail/leagueDetail?lid=' + id + "&title=" + title + "&logo=" + logo
+					url: './leagueDetail/leagueDetail?lid=' + id + "&title=" + title + "&jianjie=" + jianjie
 				});
 			},
 		},

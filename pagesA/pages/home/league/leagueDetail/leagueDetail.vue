@@ -1,22 +1,27 @@
 <template>
 	<view class="all">
-		<u-image class="img" width="100%" mode="widthFix" border-radius="8px" :src="logo" @click="toInfo"></u-image>
-		<!-- <br> -->
 		<u-cell-group :border="false">
-			<u-cell-item :border-bottom="false" :title-style="{'font-size': '32rpx','font-weight':'600','color':'#333333'}"
-			 :arrow="false" title="社团活动">
-				<u-image slot="icon" width="42rpx" height="42rpx" style="margin-right: 15rpx;" src="/pagesA/static/img/society/active.png"></u-image>
+			<u-cell-item :border-bottom="false"
+				:title-style="{'font-size': '32rpx','font-weight':'600','color':'#333333'}" :arrow="false" title="社团活动"
+				@click="toInfo">
+				<u-image slot="icon" width="42rpx" height="42rpx" style="margin-right: 15rpx;"
+					src="/pagesA/static/img/society/active.png"></u-image>
 			</u-cell-item>
 			<u-divider :use-slot="false" half-width="45%" />
 			<template v-for="item in societAtcList">
-				<u-cell-item class="listItem" :border-bottom="false" :title-style="titleStyle" :arrow="false" :title="item.name"
-				 :value="item.createtime.slice(0,10)" :value-style="valueStyle" @click="toDetail(item.huodongId,item.name)">
+				<u-cell-item class="listItem" :border-bottom="false" :title-style="titleStyle" :arrow="false"
+					:title="item.name" :value="item.createtime.slice(0,10)" :value-style="valueStyle"
+					@click="toDetail(item.huodongId,item.name)">
 				</u-cell-item>
 				<u-divider :use-slot="false" half-width="45%" />
 			</template>
 		</u-cell-group>
-		<!-- <u-empty text="暂无数据" mode="data" :show="societAtcList.length===0"></u-empty> -->
-
+		<u-card :show-head="false" box-shadow="0px 0px 3px 2px #dfdfdf">
+			<div slot="body">
+				简介：
+				<u-parse class="innerh5" :html="jianjie" :show-with-animation="true" :lazy-load="true"></u-parse>
+			</div>
+		</u-card>
 	</view>
 </template>
 
@@ -38,7 +43,7 @@
 				societAtcList: [],
 				lid: "",
 				title: "",
-				logo: "",
+				jianjie: "",
 				pageno: 1,
 				pageSize: 10,
 
@@ -50,7 +55,7 @@
 			});
 			this.title = option.title
 			this.lid = option.lid
-			this.logo = option.logo
+			this.jianjie = option.jianjie
 			this.getSocietAtc()
 		},
 		methods: {
@@ -103,5 +108,9 @@
 		.img {
 			padding: 24rpx;
 		}
+	}
+
+	.card {
+		padding: 13px 16px;
 	}
 </style>
