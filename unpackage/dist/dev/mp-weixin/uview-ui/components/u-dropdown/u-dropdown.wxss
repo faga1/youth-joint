@@ -97,6 +97,7 @@
   -webkit-transform: translate3D(0, -100%, 0);
           transform: translate3D(0, -100%, 0);
   overflow: hidden;
-  box-shadow: 1px 1px 5px #adadad;
+  -webkit-box-shadow: 1px 1px 5px #adadad;
+          box-shadow: 1px 1px 5px #adadad;
 }
 

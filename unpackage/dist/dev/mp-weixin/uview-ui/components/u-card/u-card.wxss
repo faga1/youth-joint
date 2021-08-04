@@ -9,7 +9,8 @@
   overflow: hidden;
   font-size: 28rpx;
   background-color: #ffffff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .u-card-full.data-v-d7b36b00 {
   margin-left: 0 !important;
