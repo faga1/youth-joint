@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "会员风采",
+  "navigationBarTitleText": "委员风采",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "u-search": "/uview-ui/components/u-search/u-search"

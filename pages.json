@@ -47,7 +47,7 @@
 		"pages": [{
 				"path": "pages/home/vipStyle/vipStyle",
 				"style": {
-					"navigationBarTitleText": "会员风采",
+					"navigationBarTitleText": "委员风采",
 					"enablePullDownRefresh": false
 				}
 			}, {
@@ -177,8 +177,8 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uView",
-		"navigationBarBackgroundColor": "#d81e06",
-		"backgroundColor": "#d81e06"
+		"navigationBarBackgroundColor": "#d81e06"
+		// "backgroundColor": "#ffffff"
 	},
 	"tabBar": {
 		"color": "#707070",

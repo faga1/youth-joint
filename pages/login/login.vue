@@ -36,6 +36,7 @@
 
 		onShow() {
 			if (uni.getStorageSync('memberId')) {
+				// this.loginresults(uni.getStorageSync('memberId'))
 				uni.switchTab({
 					url: "../home/home"
 				})
@@ -68,6 +69,7 @@
 					}
 					that.$u.api.login(obj).then(res => {
 						if (res.error_code === 0) {
+							// that.loginresults(res.data.memberId)
 							uni.setStorageSync('memberId', res.data.memberId);
 							uni.switchTab({
 								url: "../home/home"
@@ -80,6 +82,23 @@
 					this.$u.toast('手机号格式不正确');
 				}
 			},
+
+			/**
+			 * 登录记录
+			 */
+			// loginresults(memberId) {
+			// 	let that = this
+			// 	let obj = {
+			// 		memberId: memberId,
+			// 	}
+			// 	that.$u.api.loginresult(obj).then(res => {
+			// 		if (res.error_code === 0) {
+
+			// 		} else {
+			// 			this.$u.toast(res.msg);
+			// 		}
+			// 	})
+			// },
 		}
 	};
 </script>

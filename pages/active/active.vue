@@ -17,7 +17,13 @@
 		<view class="activeBox" v-if="searchPre.leibie!==3">
 			<template v-for="(item,index) in activeList">
 				<view class="activeItem" @click.stop="toDetail(item.activityId)">
+					<u-image v-if="item.baomingstate==='2'||item.baomingstate==='1'" class="joining" width="100rpx"
+						height="100rpx" src="/static/img/home/joining.png">
+					</u-image>
 					<view class="watchNum">
+						<u-image width="34rpx" height="34rpx" src="/static/img/home/manNum.png"></u-image>
+						<span style="margin-left:10rpx;">{{item.baomingnum}}</span>
+						<view style="width: 14px;"></view>
 						<u-image width="34rpx" height="34rpx" src="/static/img/active/see.png"></u-image>
 						<span style="margin-left:10rpx;">{{item.chakannum}}</span>
 					</view>
@@ -307,6 +313,13 @@
 	.activeBox {
 		margin-top: 88rpx;
 		background: #fff;
+		position: relative;
+
+		.joining {
+			position: absolute;
+			right: 30rpx;
+			top: 0rpx;
+		}
 
 		.activeItem {
 			display: flex;
@@ -338,26 +351,31 @@
 				flex-grow: 1;
 				display: flex;
 				flex-direction: column;
-				padding: 15rpx;
+				padding:15rpx;
 
 				.actText {
 					flex-grow: 1;
-					word-wrap: break-word;
-					word-break: normal;
 					font-size: 30rpx;
 					font-weight: 600;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
 				}
 
 				.actType {
 					height: 44rpx;
 					font-size: 24rpx;
 					color: #ffaa00;
+					line-height: 44rpx;
 				}
 
 				.actTime {
 					height: 44rpx;
 					font-size: 22rpx;
 					color: #999;
+					line-height: 44rpx;
 				}
 			}
 		}

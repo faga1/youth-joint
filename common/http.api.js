@@ -76,7 +76,12 @@ const install = (Vue, vm) => {
 	let guizhangList = (params = {}) => vm.$u.post('app/guizhang/list.htm', params);
 	//规章详情
 	let guizhangInfo = (params = {}) => vm.$u.post('app/guizhang/info.htm', params);
+	
+	//登录记录
+	let loginresult = (params = {}) => vm.$u.post('app/member/loginresult.htm', params);
+	
 	vm.$u.api = {
+		loginresult,
 		guizhangInfo,
 		guizhangList,
 		getCode,

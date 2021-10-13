@@ -42,20 +42,7 @@
 				<u-image width="32rpx" height="32rpx" src="/static/img/home/icon_right.png"></u-image>
 			</view>
 		</view>
-		<u-gap height="10" bg-color="rgb(247,247,247)"></u-gap>
-		<u-cell-group :border="false" :title-style="{'padding': '20rpx 32rpx'}" style="padding:'10px 16px'">
-			<u-cell-item :border-bottom="false"
-				:title-style="{'font-size': '36rpx','font-weight':'600','color':'#333333'}" :arrow="false" title="委员风采"
-				value="更多" @click="toVipStyle">
-				<u-image slot="icon" width="42rpx" height="42rpx" style="margin-right: 15rpx;"
-					src="/static/img/home/icon_vip.png"></u-image>
-				<u-image slot="right-icon" width="32rpx" height="32rpx" src="/static/img/home/icon_right.png"></u-image>
-			</u-cell-item>
-		</u-cell-group>
-		<u-divider :use-slot="false" half-width="45%" />
-		<u-swiper v-if="vipStyleImg.length>0" class="swiper2" :list="vipStyleImg" bg-color="#fff" height="400"
-			:effect3d="true" @click="toVipStyle">
-		</u-swiper>
+
 		<u-gap height="10" bg-color="rgb(247,247,247)"></u-gap>
 		<u-cell-group :border="false">
 			<u-cell-item :border-bottom="false"
@@ -70,9 +57,17 @@
 		<view class="activeBox">
 			<template v-for="(item,index) in activeList">
 				<view class="activeItem" @click="toDetail(item.activityId)">
+					<u-image v-if="item.baomingstate==='2'||item.baomingstate==='1'" class="joining" width="100rpx"
+						height="100rpx" src="/static/img/home/joining.png">
+					</u-image>
+
 					<view class="watchNum">
+						<u-image width="34rpx" height="34rpx" src="/static/img/home/manNum.png"></u-image>
+						<span style="margin-left:10rpx;">{{item.baomingnum}}</span>
+						<view style="width: 14px;"></view>
 						<u-image width="34rpx" height="34rpx" src="/static/img/active/see.png"></u-image>
 						<span style="margin-left:10rpx;">{{item.chakannum}}</span>
+
 					</view>
 					<view class="activeImg">
 						<u-image width="230rpx" height="168rpx" border-radius="20" :src="item.fengmian"></u-image>
@@ -90,6 +85,22 @@
 				<u-divider :use-slot="false" half-width="45%" />
 			</template>
 		</view>
+
+		<u-gap height="10" bg-color="rgb(247,247,247)"></u-gap>
+		<u-cell-group :border="false" :title-style="{'padding': '20rpx 32rpx'}" style="padding:'10px 16px'">
+			<u-cell-item :border-bottom="false"
+				:title-style="{'font-size': '36rpx','font-weight':'600','color':'#333333'}" :arrow="false" title="委员风采"
+				value="更多" @click="toVipStyle">
+				<u-image slot="icon" width="42rpx" height="42rpx" style="margin-right: 15rpx;"
+					src="/static/img/home/icon_vip.png"></u-image>
+				<u-image slot="right-icon" width="32rpx" height="32rpx" src="/static/img/home/icon_right.png"></u-image>
+			</u-cell-item>
+		</u-cell-group>
+		<u-divider :use-slot="false" half-width="45%" />
+		<u-swiper v-if="vipStyleImg.length>0" class="swiper2" :list="vipStyleImg" bg-color="#fff" height="400"
+			:effect3d="true" @click="toVipStyle">
+		</u-swiper>
+
 		<u-gap height="10" bg-color="rgb(247,247,247)"></u-gap>
 		<u-toast ref="uToast" />
 		<!-- 骨架 -->
@@ -418,6 +429,13 @@
 
 	.activeBox {
 		background: #fff;
+		position: relative;
+
+		.joining {
+			position: absolute;
+			right: 30rpx;
+			top: 0rpx;
+		}
 
 		.activeItem {
 			display: flex;

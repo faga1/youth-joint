@@ -156,12 +156,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   var a0 = {
-    padding: "20rpx 32rpx"
-  }
-  var a1 = {
     "font-size": "36rpx",
     "font-weight": "600",
     color: "#333333"
+  }
+  var a1 = {
+    padding: "20rpx 32rpx"
   }
   var a2 = {
     "font-size": "36rpx",
@@ -212,6 +212,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //

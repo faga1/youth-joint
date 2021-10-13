@@ -38,8 +38,7 @@
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "uView",
-    "navigationBarBackgroundColor": "#d81e06",
-    "backgroundColor": "#d81e06"
+    "navigationBarBackgroundColor": "#d81e06"
   },
   "tabBar": {
     "color": "#707070",
@@ -81,6 +80,5 @@
       ]
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

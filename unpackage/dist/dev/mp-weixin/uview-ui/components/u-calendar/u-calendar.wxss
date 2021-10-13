@@ -9,8 +9,7 @@
 }
 .u-calendar__header.data-v-5b667d40 {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 30rpx;
   background-color: #fff;
   color: #303133;
@@ -86,8 +85,7 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   padding: 6px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #fff;
   position: relative;
 }
@@ -203,8 +201,7 @@
           flex-direction: column;
   background-color: #fff;
   padding: 0 40rpx 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 24rpx;
   color: #909399;
 }

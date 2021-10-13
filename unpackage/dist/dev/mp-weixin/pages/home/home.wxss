@@ -70,6 +70,12 @@
 }
 .activeBox {
   background: #fff;
+  position: relative;
+}
+.activeBox .joining {
+  position: absolute;
+  right: 30rpx;
+  top: 0rpx;
 }
 .activeBox .activeItem {
   display: -webkit-box;
@@ -145,8 +151,7 @@
 }
 .circleBox .circleBoxCard {
   background: #fff;
-  -webkit-box-shadow: 0px 0px 2px #efefef;
-          box-shadow: 0px 0px 2px #efefef;
+  box-shadow: 0px 0px 2px #efefef;
   border: 1px solid #efefef;
   border-radius: 12px;
   display: -webkit-box;

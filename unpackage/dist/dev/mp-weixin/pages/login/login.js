@@ -197,6 +197,7 @@ var _default =
 
   onShow: function onShow() {
     if (uni.getStorageSync('memberId')) {
+      // this.loginresults(uni.getStorageSync('memberId'))
       uni.switchTab({
         url: "../home/home" });
 
@@ -229,6 +230,7 @@ var _default =
 
         that.$u.api.login(obj).then(function (res) {
           if (res.error_code === 0) {
+            // that.loginresults(res.data.memberId)
             uni.setStorageSync('memberId', res.data.memberId);
             uni.switchTab({
               url: "../home/home" });
@@ -240,7 +242,25 @@ var _default =
       } else {
         this.$u.toast('手机号格式不正确');
       }
-    } } };exports.default = _default;
+    }
+
+    /**
+       * 登录记录
+       */
+    // loginresults(memberId) {
+    // 	let that = this
+    // 	let obj = {
+    // 		memberId: memberId,
+    // 	}
+    // 	that.$u.api.loginresult(obj).then(res => {
+    // 		if (res.error_code === 0) {
+
+    // 		} else {
+    // 			this.$u.toast(res.msg);
+    // 		}
+    // 	})
+    // },
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
