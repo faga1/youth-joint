@@ -243,7 +243,7 @@
 
 
 
-	// 热门视频
+	// 热门视频 
 	.hot_video {
 		width: 95vw;
 		margin: 0 auto;
