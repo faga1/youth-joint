@@ -257,6 +257,7 @@
 				border: 1px solid #bbbbbb;
 				border-radius: 16rpx;
 				overflow: hidden;
+				box-shadow: 0px 0px 2px #bbbbbb;
 				position: relative;
 				background: #fff;
 
