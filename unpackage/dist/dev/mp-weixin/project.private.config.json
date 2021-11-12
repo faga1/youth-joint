@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "青联简介",
+          "pathName": "pagesA/pages/home/societyIntro/societyIntro",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "委员风采",
+          "pathName": "pages/vipStyle/vipStyle",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -86,25 +86,7 @@
 			</template>
 		</view>
 
-		<u-gap height="10" bg-color="rgb(247,247,247)"></u-gap>
-		<u-cell-group :border="false" :title-style="{'padding': '20rpx 32rpx'}" style="padding:'10px 16px'">
-			<u-cell-item :border-bottom="false"
-				:title-style="{'font-size': '36rpx','font-weight':'600','color':'#333333'}" :arrow="false" title="委员风采"
-				value="更多" @click="toVipStyle">
-				<u-image slot="icon" width="42rpx" height="42rpx" style="margin-right: 15rpx;"
-					src="/static/img/home/icon_vip.png"></u-image>
-				<u-image slot="right-icon" width="32rpx" height="32rpx" src="/static/img/home/icon_right.png"></u-image>
-			</u-cell-item>
-		</u-cell-group>
-		<u-divider :use-slot="false" half-width="45%" />
-		<u-swiper v-if="vipStyleImg.length>0" class="swiper2" :list="vipStyleImg" bg-color="#fff" height="400"
-			:effect3d="true" @click="toVipStyle">
-		</u-swiper>
-
-		<u-gap height="10" bg-color="rgb(247,247,247)"></u-gap>
-		<u-toast ref="uToast" />
-		<!-- 骨架 -->
-		<u-skeleton :loading="loading" :animation="true" bgColor="#FFF"></u-skeleton>
+		
 	</view>
 </template>
 

@@ -18,7 +18,7 @@
 						<image class="fm" :src="item.fengmian" mode=""></image>
 						<view class="anNiuBox">
 							<image @tap="boFang($event,item)" :data-id="item.fengcaiId" class="anNiu"
-								src="/pagesA/static/img/vipStyle/play.png" mode=""></image>
+								src="/static/img/home/play.png" mode=""></image>
 						</view>
 					</view>
 					<!-- 视频 -->
@@ -254,23 +254,23 @@
 			.video_info {
 				width: 100%;
 				margin: 10rpx 0rpx;
-				border: 1px solid #efefef;
-				border-radius: 12rpx;
+				border: 1px solid #bbbbbb;
+				border-radius: 16rpx;
 				overflow: hidden;
-				box-shadow: 0px 0px 2px #efefef;
+				box-shadow: 0px 0px 2px #bbbbbb;
 				position: relative;
 				background: #fff;
 
 				/* 视频 */
 				.video_video {
 					width: 100%;
-					height: 400upx;
-					border-radius: 15upx;
+					height: 400rpx;
+					border-radius: 16rpx;
 
 					video {
 						width: 100%;
-						height: 400upx;
-						border-radius: 15upx;
+						height: 400rpx;
+						border-radius: 16rpx;
 					}
 				}
 
@@ -344,9 +344,8 @@
 
 				.contentText {
 					background: #fff;
-					padding: 20rpx 30rpx;
+					padding: 26rpx 32rpx 16rpx;
 					font-size: 28rpx;
-					font-weight: 600;
 					color: #333333;
 					word-wrap: break-word;
 				}
@@ -354,7 +353,7 @@
 				.controls {
 					background: #fff;
 					display: flex;
-					padding: 8rpx 30rpx 20rpx 30rpx;
+					padding: 0 32rpx 24rpx;
 					justify-content: space-between;
 
 					.date {

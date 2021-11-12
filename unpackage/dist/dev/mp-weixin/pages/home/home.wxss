@@ -21,21 +21,13 @@
 .noticeRow {
   background-color: #fff;
   padding: 10rpx 30rpx;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .noticeRow .notL {
   width: 49px;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .noticeRow .notL .notTab {
   width: 54px;
@@ -48,21 +40,13 @@
   text-align: center;
 }
 .noticeRow .notC {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   color: #666666;
 }
 .noticeRow .notR {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .swiper2 {
   padding: 40rpx 0 55rpx 0;
@@ -78,15 +62,11 @@
   top: 0rpx;
 }
 .activeBox .activeItem {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   padding: 20rpx 30rpx;
   position: relative;
 }
 .activeBox .activeItem .watchNum {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   position: absolute;
   bottom: 10rpx;
@@ -105,18 +85,10 @@
   width: 230rpx;
 }
 .activeBox .activeItem .activeCont {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 15rpx;
 }
 .activeBox .activeItem .activeCont .actText {
@@ -154,13 +126,8 @@
   box-shadow: 0px 0px 2px #efefef;
   border: 1px solid #efefef;
   border-radius: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   padding: 45rpx 40rpx;
   overflow: hidden;
@@ -199,8 +166,6 @@
   text-overflow: ellipsis;
 }
 .circleBox .circleBoxCard .contentBox {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .circleBox .circleBoxCard .contentBox .infoTitle {
@@ -209,9 +174,7 @@
   color: #666666;
 }
 .circleBox .circleBoxCard .contentBox .info {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   font-size: 26rpx;
   color: #666666;
   overflow: hidden;
@@ -221,8 +184,6 @@
   -webkit-box-orient: vertical;
 }
 .circleBox .circleBoxCard .moneyBox {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .circleBox .circleBoxCard .moneyBox .moneyTitle {
@@ -231,15 +192,11 @@
   color: #666666;
 }
 .circleBox .circleBoxCard .moneyBox .money {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   font-size: 26rpx;
   color: #355fd6;
 }
 .circleBox .circleBoxCard .companyBox {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .circleBox .circleBoxCard .companyBox .iconImg {
@@ -248,9 +205,7 @@
 }
 .circleBox .circleBoxCard .companyBox .companyName {
   padding: 0px 10rpx;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   font-size: 26rpx;
   color: #666666;
   overflow: hidden;

@@ -17,8 +17,6 @@
   padding: 250rpx 0 150rpx 0;
 }
 .wrap .content .code.data-v-57138c72 {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   margin: 70rpx 0 15rpx 0;
   position: relative;
@@ -56,34 +54,19 @@
 }
 .wrap .content .alternative.data-v-57138c72 {
   color: #909399;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 30rpx;
 }
 .wrap .buttom .loginType.data-v-57138c72 {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   padding: 150rpx 150rpx 150rpx 150rpx;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .wrap .buttom .loginType .item.data-v-57138c72 {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: #606266;
   font-size: 28rpx;
 }

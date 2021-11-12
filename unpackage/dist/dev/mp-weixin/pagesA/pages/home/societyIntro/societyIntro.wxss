@@ -23,6 +23,9 @@
   background: #fff;
   margin-top: 80rpx;
 }
+.innerh5 .interlayer {
+  font-size: 14rpx !important;
+}
 .imgBox {
   padding: 30rpx;
   background: #fff;

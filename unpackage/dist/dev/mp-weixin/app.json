@@ -2,7 +2,7 @@
   "pages": [
     "pages/login/login",
     "pages/home/home",
-    "pages/active/active",
+    "pages/vipStyle/vipStyle",
     "pages/active/activeDetail",
     "pages/contacts/contacts",
     "pages/user/user"
@@ -11,7 +11,6 @@
     {
       "root": "pagesA",
       "pages": [
-        "pages/home/vipStyle/vipStyle",
         "pages/home/active/active",
         "pages/home/notice/notice",
         "pages/home/notice/noticeDetail",
@@ -20,7 +19,7 @@
         "pages/user/systemSet/systemSet",
         "pages/user/myActive/myActive",
         "pages/user/myActive/myActiveDetail",
-        "pages/home/vipStyle/styleDetail",
+        "pages/home/styleDetail/styleDetail",
         "pages/home/societyIntro/societyIntro",
         "pages/home/societyIntro/jiebieInfo",
         "pages/home/league/league",
@@ -53,10 +52,10 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/active/active",
+        "pagePath": "pages/vipStyle/vipStyle",
         "iconPath": "static/img/tabBar/gift0.png",
         "selectedIconPath": "static/img/tabBar/gift1.png",
-        "text": "活动"
+        "text": "委员风采"
       },
       {
         "pagePath": "pages/contacts/contacts",
@@ -80,5 +79,6 @@
       ]
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

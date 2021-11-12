@@ -11,8 +11,6 @@
     "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
     "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
     "u-divider": "/uview-ui/components/u-divider/u-divider",
-    "u-button": "/uview-ui/components/u-button/u-button",
-    "u-toast": "/uview-ui/components/u-toast/u-toast",
-    "u-skeleton": "/uview-ui/components/u-skeleton/u-skeleton"
+    "u-button": "/uview-ui/components/u-button/u-button"
   }
 }

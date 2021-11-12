@@ -15,9 +15,9 @@
 			"enablePullDownRefresh": false
 		}
 	}, {
-		"path": "pages/active/active",
+		"path": "pages/vipStyle/vipStyle",
 		"style": {
-			"navigationBarTitleText": "活动",
+			"navigationBarTitleText": "委员风采",
 			"enablePullDownRefresh": false
 		}
 	}, {
@@ -45,12 +45,6 @@
 		"root": "pagesA",
 		"name": "pagesA",
 		"pages": [{
-				"path": "pages/home/vipStyle/vipStyle",
-				"style": {
-					"navigationBarTitleText": "委员风采",
-					"enablePullDownRefresh": false
-				}
-			}, {
 				"path": "pages/home/active/active",
 				"style": {
 					"navigationBarTitleText": "活动",
@@ -99,7 +93,7 @@
 					"enablePullDownRefresh": false
 				}
 			}, {
-				"path": "pages/home/vipStyle/styleDetail",
+				"path": "pages/home/styleDetail/styleDetail",
 				"style": {
 					"navigationBarTitleText": "会员风采",
 					"enablePullDownRefresh": false
@@ -192,10 +186,10 @@
 				"text": "首页"
 			},
 			{
-				"pagePath": "pages/active/active",
+				"pagePath": "pages/vipStyle/vipStyle",
 				"iconPath": "static/img/tabBar/gift0.png",
 				"selectedIconPath": "static/img/tabBar/gift1.png",
-				"text": "活动"
+				"text": "委员风采"
 			},
 			{
 				"pagePath": "pages/contacts/contacts",

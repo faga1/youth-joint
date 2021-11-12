@@ -18,23 +18,13 @@
   right: 0px;
   z-index: 99;
   background-color: #f2f2f2;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .searchBox .inputBox {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 5px;
 }
 .activeBox {
@@ -42,15 +32,11 @@
   background: #fff;
 }
 .activeBox .activeItem {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   padding: 20rpx 30rpx;
   position: relative;
 }
 .activeBox .activeItem .watchNum {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   position: absolute;
   bottom: 10rpx;
@@ -69,22 +55,13 @@
   width: 230rpx;
 }
 .activeBox .activeItem .activeCont {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 15rpx;
 }
 .activeBox .activeItem .activeCont .actText {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   word-wrap: break-word;
   word-break: normal;
   font-size: 30rpx;

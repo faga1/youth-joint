@@ -1,8 +1,19 @@
 <template>
 	<view>
-		<div class="topLine"></div>
+		<view class="topLine"></view>
 		<u-tabs class="topBtn" :list="list" :is-scroll="false" :current="current" @change="change"></u-tabs>
-		<u-parse v-if="current===0" class="innerh5" :html="content" :show-with-animation="true" :lazy-load="true">
+		<u-parse 
+			v-if="current===0" 
+			class="innerh5" 
+			:html="content" 
+			:show-with-animation="true" 
+			:lazy-load="true" 
+			:selectable='true'
+			:tag-style="{
+						 h5:'line-height:50rpx!important',
+						 span:'font-size:28rpx!important'
+			           }"
+			 >
 		</u-parse>
 		<view class="imgBoxs" v-if="current===1">
 			<template v-for="item in jiebieLists">
@@ -41,6 +52,7 @@
 					'white-space': 'nowrap',
 					'text-overflow': 'ellipsis',
 				},
+				
 			}
 		},
 		methods: {
@@ -68,7 +80,9 @@
 				let that = this
 				that.$u.api.getSocietyIntro(obj).then(res => {
 					that.content = res.data.xiehuijianjie
+					console.log(that.content)
 				})
+				
 			},
 			/**
 			 * 获取界别列表
@@ -158,8 +172,11 @@
 		padding: 30rpx;
 		background: #fff;
 		margin-top: 80rpx;
+		.interlayer{
+			font-size:14rpx !important;
+		}
 	}
-
+	
 	.imgBox {
 		padding: 30rpx;
 		background: #fff;

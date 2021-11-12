@@ -30,12 +30,8 @@
 }
 .wrap .content .alternative.data-v-b237504c {
   color: #909399;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 30rpx;
 }
 

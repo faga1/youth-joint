@@ -26,37 +26,25 @@
   padding: 15rpx;
   background: #f2f2f2;
   border-radius: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .infoBox .year {
   font-size: 16px;
   color: #990055;
 }
 .infoBox .info {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  justify-content: space-around;
 }
 .infoBox .info .texts {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .activeBox {
   margin-top: 98rpx;
   background: #fff;
 }
 .activeBox .activeItem {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   padding: 20rpx 0rpx;
   position: relative;
@@ -71,22 +59,13 @@
   width: 230rpx;
 }
 .activeBox .activeItem .activeCont {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 15rpx;
 }
 .activeBox .activeItem .activeCont .actText {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   word-wrap: break-word;
   word-break: normal;
   font-size: 30rpx;
